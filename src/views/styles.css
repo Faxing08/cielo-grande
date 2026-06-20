@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+}
+
+.card-login {
+    width: 100%;
+    max-width: 400px;
+}
+
+.image-login {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+}
+
+.card-login input {
+    font-size: 1rem;
+}
+
+.card-login input:focus {
+    outline: none;
+}
+
+.card-login .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.card-login .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.card-login .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.card-login a{
+    text-decoration: none;
+}
+
+.card-login a:hover {
+    text-decoration: underline;
+}
