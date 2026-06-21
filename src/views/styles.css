@@ -43,3 +43,11 @@ body {
 .card-login a:hover {
     text-decoration: underline;
 }
+
+.barra {
+    width: 100%;
+    height: 4px;
+    background-color: #035e03;
+    opacity: 0.2;
+    margin-top: 1rem;
+}
