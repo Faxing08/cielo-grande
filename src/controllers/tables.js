@@ -211,3 +211,24 @@ navigationLinks.forEach((link, index) => {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const usuario = JSON.parse(localStorage.getItem("usuario"));
+
+  if (usuario) {
+    document.getElementById("name-count").textContent = usuario.nombre;
+  }
+});
+// Función para cerrar sesión
+function cerrarSesion() {
+  // Eliminar el objeto "usuario" del localStorage
+  localStorage.removeItem("usuario");
+
+  // Redirigir a la página de inicio de sesión
+  window.location.href = "../../../index.html";
+}
+
+// Agregar el evento de clic al botón de cerrar sesión
+document
+  .getElementById("cerrar-sesion")
+  .addEventListener("click", cerrarSesion);
