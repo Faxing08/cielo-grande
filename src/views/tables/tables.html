@@ -26,10 +26,26 @@
         </button>
 
         <div class="ms-auto d-flex gap-2">
-          <button class="btn btn-outline-secondary">
-            <span>John</span>
-            <i class="bi bi-person-circle ms-1"></i>
-          </button>
+          <div class="dropdown">
+            <button
+              class="btn btn-outline-secondary dropdown-toggle"
+              data-bs-toggle="dropdown"
+            >
+              <span>John</span>
+              <i class="bi bi-person-circle ms-1"></i>
+            </button>
+            <ul class="dropdown-menu p-1">
+              <li><a class="dropdown-item" href="#">Nombre</a></li>
+              <li><a class="dropdown-item" href="#">Correo</a></li>
+              <li>
+                <a
+                  class="dropdown-item bg-danger rounded"
+                  href="../../../index.html"
+                  >Cerrar Sesión</a
+                >
+              </li>
+            </ul>
+          </div>
 
           <button class="btn btn-outline-secondary" id="theme-toggle">
             <i class="bi bi-moon"></i>
